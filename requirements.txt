@@ -7,3 +7,5 @@ sentence-transformers
 fastapi
 uvicorn
 pytest
+python-dotenv
+pgvector

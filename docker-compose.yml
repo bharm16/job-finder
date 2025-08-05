@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: job_finder_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: job_finder
+    ports:
+      - "5432:5432"
+    volumes:
+      - job_finder_data:/var/lib/postgresql/data
+volumes:
+  job_finder_data:
