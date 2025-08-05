@@ -11,6 +11,9 @@ class Settings:
     adzuna_app_id: str = os.getenv("ADZUNA_APP_ID", "")
     adzuna_app_key: str = os.getenv("ADZUNA_APP_KEY", "")
     ziprecruiter_api_key: str = os.getenv("ZIPRECRUITER_API_KEY", "")
+    usajobs_api_key: str = os.getenv("USAJOBS_API_KEY", "")
+    usajobs_user_agent: str = os.getenv("USAJOBS_USER_AGENT", "")
+    jobspikr_api_key: str = os.getenv("JOBSPIKR_API_KEY", "")
 
 
 settings = Settings()
