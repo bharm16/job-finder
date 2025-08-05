@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+sqlalchemy
+psycopg2-binary
+spacy
+sentence-transformers
+fastapi
+uvicorn
