@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from ..search.search_index import search_jobs
+from search.search_index import search_jobs
 
 app = FastAPI()
 

@@ -3,7 +3,7 @@ from typing import Iterable, Dict, Any
 import requests
 
 from .base import JobSource
-from ..config import settings
+from config import settings
 
 
 class ZipRecruiterClient(JobSource):

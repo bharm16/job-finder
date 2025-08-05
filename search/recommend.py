@@ -1,7 +1,7 @@
 from typing import List, Set
 
-from ..db.db_client import get_session
-from ..db.models import Job
+from db.db_client import get_session
+from db.models import Job
 
 
 def recommend_jobs(profile_skills: List[str], limit: int = 10) -> List[Job]:

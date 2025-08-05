@@ -1,6 +1,6 @@
 import argparse
 
-from ..search.search_index import search_jobs
+from search.search_index import search_jobs
 
 
 def main() -> None:

@@ -2,8 +2,8 @@ from typing import List
 
 from sqlalchemy import or_, select
 
-from ..db.db_client import get_session
-from ..db.models import Job
+from db.db_client import get_session
+from db.models import Job
 
 
 def search_jobs(query: str, limit: int = 10) -> List[Job]:
