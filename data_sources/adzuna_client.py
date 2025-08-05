@@ -1,4 +1,4 @@
-from typing import Iterable, Dict, Any
+from typing import Iterable, Dict, Any, Union
 
 import requests
 
@@ -11,7 +11,7 @@ class AdzunaClient(JobSource):
 
     source_name = "adzuna"
 
-    def __init__(self, app_id: str | None = None, app_key: str | None = None) -> None:
+    def __init__(self, app_id: Union[str, None] = None, app_key: Union[str, None] = None) -> None:
         self.app_id = app_id or settings.adzuna_app_id
         self.app_key = app_key or settings.adzuna_app_key
 

@@ -1,4 +1,4 @@
-from typing import Iterable, Dict, Any
+from typing import Iterable, Dict, Any, Union
 
 import requests
 
@@ -11,7 +11,7 @@ class JobsPikrClient(JobSource):
 
     source_name = "jobspikr"
 
-    def __init__(self, api_key: str | None = None) -> None:
+    def __init__(self, api_key: Union[str, None] = None) -> None:
         self.api_key = api_key or settings.jobspikr_api_key
 
     def fetch_jobs(

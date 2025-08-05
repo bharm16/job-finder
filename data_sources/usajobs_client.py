@@ -1,4 +1,4 @@
-from typing import Iterable, Dict, Any
+from typing import Iterable, Dict, Any, Union
 
 import requests
 
@@ -13,8 +13,8 @@ class USAJobsClient(JobSource):
 
     def __init__(
         self,
-        api_key: str | None = None,
-        user_agent: str | None = None,
+        api_key: Union[str, None] = None,
+        user_agent: Union[str, None] = None,
     ) -> None:
         self.api_key = api_key or settings.usajobs_api_key
         self.user_agent = user_agent or settings.usajobs_user_agent

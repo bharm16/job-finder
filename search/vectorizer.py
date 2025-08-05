@@ -1,8 +1,8 @@
-from typing import List
+from typing import List, Union
 
 from sentence_transformers import SentenceTransformer
 
-_model: SentenceTransformer | None = None
+_model: Union[SentenceTransformer, None] = None
 
 
 def get_model() -> SentenceTransformer:
