@@ -10,6 +10,7 @@ class Settings:
     linkedin_password: str = os.getenv("LINKEDIN_PASSWORD", "")
     adzuna_app_id: str = os.getenv("ADZUNA_APP_ID", "")
     adzuna_app_key: str = os.getenv("ADZUNA_APP_KEY", "")
+    ziprecruiter_api_key: str = os.getenv("ZIPRECRUITER_API_KEY", "")
 
 
 settings = Settings()

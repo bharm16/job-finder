@@ -25,6 +25,19 @@ def normalize_job(raw: Dict[str, Any], source: str) -> Dict[str, Any]:
             "posting_date": _parse_date(raw.get("created")),
         }
 
+    if source == "ziprecruiter":
+        company = raw.get("hiring_company", {})
+        return {
+            "title": raw.get("name", ""),
+            "company": company.get("name", ""),
+            "location": raw.get("location", ""),
+            "description": raw.get("snippet", ""),
+            "skills": [],
+            "source": source,
+            "url": raw.get("url", ""),
+            "posting_date": _parse_date(raw.get("posted_time")),
+        }
+
     return {
         "title": raw.get("title", ""),
         "company": raw.get("company", ""),
