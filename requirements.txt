@@ -6,3 +6,4 @@ spacy
 sentence-transformers
 fastapi
 uvicorn
+pytest
